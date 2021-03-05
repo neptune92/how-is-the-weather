@@ -1,0 +1,5 @@
+var city = document.querySelector("#city")
+var temp = document.querySelector("#temp")
+var humidity = document.querySelector("#humidity")
+var wind = document.querySelector("#wind")
+var uv = document.querySelector("#uv")
