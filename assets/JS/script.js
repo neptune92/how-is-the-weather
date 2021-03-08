@@ -9,17 +9,18 @@ var button = document.querySelector("#button")
 //get icons to display what type of weather is shown
 //call on the api
 
-button.addEventListener("click", function(){
-    fetch('api.openweathermap.org/data/2.5/forecast?q='+city.value+'&appid=76b5222b48869ac7baa1d1239fb2354b')
-.then(response => response.json)
-.then (data => {
-    var cityName = data["city"];
-    var tempValue = data["main"]["temp"];
 
-    city.innerHTML = cityName;
-    temp.innerHTML = tempValue;
-})
+    //fetch('https://api.openweathermap.org/data/2.5/forecast?q=austin&units=imperial&appid=76b5222b48869ac7baa1d1239fb2354b')
+ 
+   var apiWeather = {
+       url: 'http://api.openweathermap.org/data/2.5/forecast?q=austin&units=imperial&appid=76b5222b48869ac7baa1d1239fb2354b',
+       city: '',
+       temp: '',
+       humidity: '',
+       wind: '',
+       uv: ''
+   }
 
-
-.catch (err => alert("Wrong city!"))
-})
+   var {url, city, temp, humidity, wind, uv} = apiWeather
+   var apiUrl = `${url} ${city} ${temp} ${humidity} ${wind} ${uv}`
+   console.log(apiUrl)
