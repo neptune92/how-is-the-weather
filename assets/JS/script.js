@@ -13,8 +13,8 @@
     //fetch('https://api.openweathermap.org/data/2.5/forecast?q=austin&units=imperial&appid=76b5222b48869ac7baa1d1239fb2354b')
  
    var apiWeather = {
-       url: 'api.openweathermap.org/data/2.5/forecast?q=austin&appid=76b5222b48869ac7baa1d1239fb2354b&units=imperial',
-       city: 'name',
+       url: 'https://api.openweathermap.org/data/2.5/forecast?q=austin&appid=76b5222b48869ac7baa1d1239fb2354b&units=imperial',
+       city: 'austin',
        main: 'temp',
    }
 
